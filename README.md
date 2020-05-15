@@ -20,8 +20,8 @@ The Python script is easily adjustable for other automation tasks, e.g. talking 
 All configuration settings are stored in the **nanoleaf.ini** file as explained below. See sample [nanoleaf.ini](https://github.com/mghaan/nanoleaf-python/blob/master/canvas/nanoleaf.ini) file.
 
     [nanoleaf]
-    url = hostname/IP address and port to your Nanoleaf Canvas (e.g. 192.168.1.1:16021)
-    token = Canvas auth token
+    url = hostname/IP address and port to your Nanoleaf (e.g. 192.168.1.1:16021)
+    token = Nanoleaf auth token
     
     [openhab]
     url = hostname/IP address and port to your openHAB instance (e.g. 192.168.1.1:8080)
@@ -41,7 +41,7 @@ To listen and pass touch events, run **nanoleaf.py** without any parameters (or 
 
 ### Control lights, read state
 
-To control, set or read values from Canvas, use parameters as described below:
+To control, set or read values from Nanoleaf, use parameters as described below:
 
 **Turn on lights:**
 
@@ -91,7 +91,7 @@ Returns value between 0 and 360. This has meaning only if static scene with sing
 
     nanoleaf.py seteffect <name>
     
-Name is the scene name as saved in Nanoleaf.
+Name is the scene as saved in Nanoleaf.
 
 **Get current scene name:**
 
